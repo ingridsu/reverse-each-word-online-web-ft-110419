@@ -1,12 +1,12 @@
 def reverse_each_word (sentence)
-  reversed=[]
+  # reversed=[]
   
-  sentence.split.each do |word|
-    reversed <<  word.reverse 
-  end
-  reversed.join(" ")
-   sentence.split.each do |word|
-    reversed <<  word.reverse 
-  end
+  # sentence.split.each do |word|
+  #   reversed <<  word.reverse 
+  # end
+  # reversed.join(" ")
+   sentence.split.collect do |word|
+    word.reverse 
+  end.join (" ")
  
 end
